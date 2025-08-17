@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  youtube-app:
+    # here lets build the image 
+    build: .
+    
+    container_name: youtube-shorts-creator
+    
+    # here basically like the -it flag 
+    stdin_open: true    #  -i flag
+    tty: true          #  -t flag
+    
+    
+    volumes:
+      - .:/session11
+    
